@@ -19,4 +19,3 @@ class Dog:
     def toString(self):
         return self._dogname + " has id " + str(self._dogid) + " and owner " + self._dogowner._ownername
     
-    
