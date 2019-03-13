@@ -16,10 +16,10 @@ xy = []
 
 for y in range(100, 1, -1):
     y_val = y / 100
-    x_val = math.log((1 + math.sqrt(1 - y_val*y_val)) / y) - math.sqrt(1 - y_val*y_val)
+    x_val = math.log((1 + math.sqrt(1 - y_val*y_val)) / y_val) - math.sqrt(1 - y_val*y_val)
     xy.append(50 + x_val * 100)
     xy.append(250 - y_val * 100)
 
 dogcurve = my_canvas.create_line(xy, fill="blue")
-
+print(xy)
 root.mainloop()
